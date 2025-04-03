@@ -1,41 +1,35 @@
-# Phishing Simulation & Response Plan
+# Splunk Usage Labs
 
-This project documents a simulated phishing attack conducted to raise security awareness and test incident response capabilities. It includes planning, execution, and mitigation strategies.
+This repository documents my hands-on experience using Splunk for log analysis, alerting, and visualization. It includes lab exercises, example queries, and screenshots.
 
 ## Objectives
-- Educate users on phishing tactics
-- Measure click-through and submission rates
-- Test incident response and escalation procedures
+- Ingest and index machine data
+- Write SPL (Search Processing Language) queries
+- Build alerts and dashboards
+- Detect security events
 
-## Simulation Overview
-- **Tool Used**: GoPhish (Open Source Phishing Framework)
-- **Target**: Internal team (controlled environment)
-- **Payload**: Fake login page mimicking a real service
-- **Metrics**: Email opens, link clicks, credential submissions
+## Labs Covered
+- Installing and configuring Splunk
+- Ingesting logs from endpoints and servers
+- Writing SPL to detect suspicious behavior
+- Creating dashboards for visualization
+- Setting up custom alerts
 
-## Response Plan
-1. Identify & report suspicious emails
-2. Isolate compromised systems (if any)
-3. Reset affected credentials
-4. Notify security team and log incident
-5. Conduct post-incident review and training
+## Tools & Skills
+- Splunk Web & Universal Forwarder
+- SPL (Search Processing Language)
+- Syslog and log ingestion
+- Security event correlation
+- Dashboard & alert configuration
 
 ## Screenshots
 
 | Step | Description | Image |
 |------|-------------|-------|
-| 1 | Created phishing email campaign in GoPhish | ![Step 1](screenshots/gophish-campaign.png) |
-| 2 | Customized fake login page template | ![Step 2](screenshots/fake-login.png) |
-| 3 | Real-time results tracking via dashboard | ![Step 3](screenshots/gophish-dashboard.png) |
-| 4 | Summary of clicks and submissions | ![Step 4](screenshots/report-summary.png) |
+| 1 | Installed Splunk and added data sources | ![Step 1](screenshots/splunk-install.png) |
+| 2 | Wrote SPL query to find failed login attempts | ![Step 2](screenshots/failed-logins.png) |
+| 3 | Created dashboard with real-time search panels | ![Step 3](screenshots/splunk-dashboard.png) |
+| 4 | Configured custom alerts based on thresholds | ![Step 4](screenshots/splunk-alerts.png) |
 
-## Lessons Learned
-- Importance of frequent training
-- Most clicked emails had urgent language and branding
-- Real-time monitoring allows faster containment
-
-## Tools & Skills
-- GoPhish
-- Network monitoring
-- Security awareness training
-- Incident response planning# Splunk
+## Notes
+Splunk is an incredibly powerful tool for visualizing data and detecting anomalies. These labs showcase how to leverage it in cybersecurity use cases.
